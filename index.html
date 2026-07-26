@@ -1,0 +1,780 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aure'Design Wedding Decor - Pernikahan Artistik & Estetis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-inner">
+            <a href="#home" class="logo">
+                <div class="logo-icon"><i class="fas fa-feather-alt"></i></div>
+                <span>Aure'Design</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#services" class="nav-link">Layanan</a></li>
+                <li><a href="#gallery" class="nav-link">Galeri</a></li>
+                <li><a href="#packages-indoor" class="nav-link">Paket</a></li>
+                <li><a href="https://wa.me/628984706086" class="nav-link cta-btn"><i class="fas fa-comments"></i> Konsultasi</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-intro">
+            <span class="hero-label">Wedding Decor Studio</span>
+            <h1>Rancang Pernikahan Artistikmu, Your Style is Your Choice</h1>
+            <p>Desain dekorasi pernikahan yang hangat, elegan, dan personal. Mulai dari ceremony arc hingga lounge photo corner, setiap detail dirancang untuk memukau.</p>
+            <div class="hero-actions">
+                <button class="btn btn-primary btn-lg" id="freeConsultBtn"><i class="fas fa-heart"></i> Konsultasi Gratis</button>
+<a href="#packages-indoor" class="btn btn-outline btn-lg"><i class="fas fa-gift"></i> Lihat Paket</a>
+            </div>
+<div class="hero-meta">
+                <div class="meta-item pop-highlight"><strong>5+</strong><span>Tahun Pengalaman</span></div>
+                <div class="meta-item pop-highlight"><strong>120+</strong><span>Wedding Completed</span></div>
+                <div class="meta-item pop-highlight"><strong>98%</strong><span>Kepuasan Klien</span></div>
+                <div class="meta-item pop-highlight"><strong>24/7</strong><span>Support Online</span></div>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="hero-card">
+                <div class="image-carousel">
+                    <div class="carousel-item active"><img src="assets/images/slide1.jpeg" alt="Wedding Decor Boho" loading="lazy"></div>
+                    <div class="carousel-item"><img src="assets/images/slide2.jpeg" alt="Elegant Wedding Setup" loading="lazy"></div>
+                    <div class="carousel-item"><img src="assets/images/slide3.jpeg" alt="Wedding Floral Design" loading="lazy"></div>
+                    <div class="carousel-item"><img src="assets/images/slide4.jpeg" alt="Rustic Wedding Decor" loading="lazy"></div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
+                    <button class="carousel-btn next" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="carousel-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimoni</span>
+                <h2>Kata Mereka tentang Aure'Design</h2>
+                <p>Klien kami membagikan pengalaman dekorasi yang berkesan dan emosional.</p>
+            </div>
+            <div class="testimonials-carousel">
+                <button class="testi-btn testi-prev" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonials-track" id="testimonialsTrack">
+                    <!-- Cards rendered by JS from localStorage/JSON -->
+                </div>
+                <button class="testi-btn testi-next" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="testi-dots" id="testiDotsContainer"></div>
+            <div class="testimonial-add" style="text-align:center;margin-top:24px;display:none;">
+                <a href="#" class="btn btn-outline btn-sm" id="addTestimonialBtn"><i class="fas fa-star"></i> Berikan Ulasan</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Layanan Unggulan</span>
+                <h2>Konsep Dekorasi Pernikahan yang Berbeda</h2>
+                <p>Kami mengubah setiap venue menjadi ruang perayaan yang penuh karakter dan emosi.</p>
+            </div>
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-icon"><i class="fas fa-seedling"></i></div>
+                    <h3>Organic Minimalist</h3>
+                    <p>Embrace the beauty of simplicity with an Organic Minimalist touch.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Clean Lines</li>
+                        <li><i class="fas fa-check"></i> Soft Textures</li>
+                        <li><i class="fas fa-check"></i> Organic Shapes</li>
+                    </ul>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon"><i class="fas fa-moon"></i></div>
+                    <h3>Traditional Java</h3>
+                    <p>Discover the beauty of a wedding at Pendopo Tentrem, where every corner is designed to celebrate your sacred moment with an authentic Javanese touch.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Traditional Elements</li>
+                        <li><i class="fas fa-check"></i> Nature</li>
+                        <li><i class="fas fa-check"></i> Love in Harmony</li>
+                    </ul>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon"><i class="fas fa-gem"></i></div>
+                    <h3>Blossom & Drapes</h3>
+                    <p>Unveiling "Blossom & Drapes": Timeless elegance for the modern celebration</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Floral premium</li>
+                        <li><i class="fas fa-check"></i> The soft, elegant draping provides a luxurious foundation</li>
+                        <li><i class="fas fa-check"></i> Exclusive Design</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Galeri</span>
+                <h2>Inspirasi Dekorasi Pernikahan</h2>
+                <p>Lihat contoh karya kami dengan konsep yang unik dan estetik.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-card">
+                    <div class="gallery-slider-header" onclick="location.href='#packages-indoor'">
+                        <h3><i class="fas fa-home"></i> Décor Indoor</h3>
+                        <p>Klik untuk lihat Paket Indoor</p>
+                    </div>
+                    <div class="gallery-slider">
+                        <button class="gallery-slide-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+                        <div class="gallery-slider-track">
+                            <div class="gallery-slide">
+                                <div class="gallery-grid-2x2">
+                                    <img src="assets/images/gallery-1.jpeg" alt="Dekorasi Indoor - Pelaminan dengan rangkaian bunga segar dan lighting hangat">
+                                    <img src="assets/images/gallery-2.jpeg" alt="Dekorasi Indoor - Elegant setup dengan sentuhan floral premium">
+                                    <img src="assets/images/gallery-3.jpeg" alt="Dekorasi Indoor - Meja tamu boho dengan dekorasi bunga kering">
+                                    <img src="assets/images/slide2.jpeg" alt="Dekorasi Indoor - Pelaminan mewah dengan draping kain elegan">
+                                </div>
+                            </div>
+                            <div class="gallery-slide">
+                                <div class="gallery-grid-2x2">
+                                    <img src="assets/images/slide1.jpeg" alt="Dekorasi Indoor - Tema klasik modern dengan pencahayaan hangat">
+                                    <img src="assets/images/slide3.jpeg" alt="Dekorasi Indoor - Dekorasi lorong pengantin dengan rangkaian bunga">
+                                    <img src="assets/images/slide4.jpeg" alt="Dekorasi Indoor - Sudut ruangan dengan dekorasi bunga premium">
+                                    <img src="assets/images/gallery-5.jpeg" alt="Dekorasi Indoor - Detail meja tamu dengan bunga segar">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="gallery-slide-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-slider-header" onclick="location.href='#packages-outdoor'">
+                        <h3><i class="fas fa-tree"></i> Décor Outdoor</h3>
+                        <p>Klik untuk lihat Paket Outdoor</p>
+                    </div>
+                    <div class="gallery-slider">
+                        <button class="gallery-slide-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+                        <div class="gallery-slider-track">
+                            <div class="gallery-slide">
+                                <div class="gallery-grid-2x2">
+                                    <img src="assets/images/gallery-6.jpeg" alt="Dekorasi Indoor - Pelaminan dengan rangkaian bunga segar dan lighting hangat">
+                                    <img src="assets/images/gallery-2.jpeg" alt="Dekorasi Indoor - Elegant setup dengan sentuhan floral premium">
+                                    <img src="assets/images/gallery-3.jpeg" alt="Dekorasi Indoor - Meja tamu boho dengan dekorasi bunga kering">
+                                    <img src="assets/images/slide1.jpeg" alt="Dekorasi Indoor - Pelaminan mewah dengan draping kain elegan">
+                                </div>
+                            </div>
+                            <div class="gallery-slide">
+                                <div class="gallery-grid-2x2">
+                                    <img src="assets/images/slide4.jpeg" alt="Dekorasi Outdoor - Setup taman dengan kursi tamu dan dekorasi bunga">
+                                    <img src="assets/images/slide3.jpeg" alt="Dekorasi Outdoor - Tenda pernikahan dengan rangkaian bunga segar">
+                                    <img src="assets/images/slide4.jpeg" alt="Dekorasi Outdoor - Area resepsi outdoor yang elegan">
+                                    <img src="assets/images/slide2.jpeg" alt="Dekorasi Outdoor - Pelaminan outdoor dengan pemandangan taman">
+                                </div>
+                            </div>
+                            <div class="gallery-slide">
+                                <div class="gallery-grid-2x2">
+                                    <img src="assets/images/slide4.jpeg" alt="Dekorasi Indoor - Pelaminan dengan rangkaian bunga segar dan lighting hangat">
+                                    <img src="assets/images/slide1.jpeg" alt="Dekorasi Indoor - Elegant setup dengan sentuhan floral premium">
+                                    <img src="assets/images/gallery-3.jpeg" alt="Dekorasi Indoor - Meja tamu boho dengan dekorasi bunga kering">
+                                    <img src="assets/images/slide2.jpeg" alt="Dekorasi Indoor - Pelaminan mewah dengan draping kain elegan">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="gallery-slide-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="packages-indoor" class="packages">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Paket Indoor</span>
+                <h2>Paket Dekorasi Indoor</h2>
+                <p>Pilihan paket dekorasi indoor yang mewah dan estetis untuk pernikahan impian Anda.</p>
+            </div>
+            <div class="packages-grid">
+                <!-- Indoor: Tulip -->
+                <div class="package-card">
+                    <div class="pkg-slider">
+                        <button class="pkg-slide-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+                        <div class="pkg-slider-track">
+                            <div class="pkg-slide"><img src="assets/images/gallery-1.jpeg" alt="Tulip Indoor - Dekorasi pelaminan 6M dengan rangkaian bunga segar"></div>
+                            <div class="pkg-slide"><img src="assets/images/slide1.jpeg" alt="Tulip Indoor - Tema pelaminan klasik modern"></div>
+                            <div class="pkg-slide"><img src="assets/images/slide3.jpeg" alt="Tulip Indoor - Dekorasi lorong dengan bunga"></div>
+                        </div>
+                        <button class="pkg-slide-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <span class="package-label">Decor Indoor</span>
+                    <h3>Tulip Package</h3>
+                    <p class="package-price">Start from Rp 16,4 Jt</p>
+                    <div class="package-main">
+                        <button class="accordion-toggle"><i class="fas fa-chevron-down"></i> Lihat Detail</button>
+                        <div class="package-note">
+                            <span><strong>DP minimal 30%</strong></span>
+                            <span>Pelunasan H-3 sebelum pemasangan</span>
+                        </div>
+                        <button class="btn btn-outline btn-order-now" data-package="Indoor - Tulip Package">Pesan Sekarang</button>
+                    </div>
+                    <div class="package-details">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Dekorasi pelaminan 6 M</li>
+                            <li><i class="fas fa-check"></i> Backdrop musik</li>
+                            <li><i class="fas fa-check"></i> Photobooth</li>
+                            <li><i class="fas fa-check"></i> Dekorasi Lorong</li>
+                            <li><i class="fas fa-check"></i> Wedding Gate/Pintu Masuk</li>
+                            <li><i class="fas fa-check"></i> Kotak Ampou</li>
+                            <li><i class="fas fa-check"></i> Dekorasi Lampu Pelaminan</li>
+                            <li><i class="fas fa-check"></i> Detailing</li>
+                            <li><i class="fas fa-check"></i> Mix Flower</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Indoor: Kuntum -->
+                <div class="package-card">
+                    <div class="pkg-slider">
+                        <button class="pkg-slide-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+                        <div class="pkg-slider-track">
+                            <div class="pkg-slide"><img src="assets/images/gallery-2.jpeg" alt="Kuntum Indoor - Dekorasi pelaminan 8M dengan standing bunga"></div>
+                            <div class="pkg-slide"><img src="assets/images/slide2.jpeg" alt="Kuntum Indoor - Tema elegan dengan karpet dan lorong"></div>
+                            <div class="pkg-slide"><img src="assets/images/slide4.jpeg" alt="Kuntum Indoor - Wedding gate dekorasi bunga"></div>
+                        </div>
+                        <button class="pkg-slide-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <span class="package-label">Decor Indoor</span>
+                    <h3>Kuntum Package</h3>
+                    <p class="package-price">Start from Rp 24,5 Jt</p>
+                    <div class="package-main">
+                        <button class="accordion-toggle"><i class="fas fa-chevron-down"></i> Lihat Detail</button>
+                        <div class="package-note">
+                            <span><strong>DP minimal 30%</strong></span>
+                            <span>Pelunasan H-3 sebelum pemasangan</span>
+                        </div>
+                        <button class="btn btn-primary btn-order-now" data-package="Indoor - Kuntum Package">Pesan Sekarang</button>
+                    </div>
+                    <div class="package-details">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Dekorasi pelaminan 8 M</li>
+                            <li><i class="fas fa-check"></i> Backdrop musik</li>
+                            <li><i class="fas fa-check"></i> Photobooth</li>
+                            <li><i class="fas fa-check"></i> Standing Bunga</li>
+                            <li><i class="fas fa-check"></i> Dekorasi Lorong</li>
+                            <li><i class="fas fa-check"></i> Karpet Jalan</li>
+                            <li><i class="fas fa-check"></i> Wedding Gate/Pintu Masuk</li>
+                            <li><i class="fas fa-check"></i> Kotak Ampou</li>
+                            <li><i class="fas fa-check"></i> Dekorasi Lampu Pelaminan</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Indoor: Rose -->
+                <div class="package-card">
+                    <div class="pkg-slider">
+                        <button class="pkg-slide-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+                        <div class="pkg-slider-track">
+                            <div class="pkg-slide"><img src="assets/images/gallery-3.jpeg" alt="Rose Indoor - Dekorasi pelaminan 10M dengan pergola"></div>
+                            <div class="pkg-slide"><img src="assets/images/gallery-5.jpeg" alt="Rose Indoor - Photo galeri dan standing bunga premium"></div>
+                            <div class="pkg-slide"><img src="assets/images/slide1.jpeg" alt="Rose Indoor - Dekorasi lampu jalan dan taman indoor"></div>
+                        </div>
+                        <button class="pkg-slide-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <span class="package-label">Decor Indoor</span>
+                    <h3>Rose Package</h3>
+                    <p class="package-price">Start from Rp 49,5 Jt</p>
+                    <div class="package-main">
+                        <button class="accordion-toggle"><i class="fas fa-chevron-down"></i> Lihat Detail</button>
+                        <div class="package-note">
+                            <span><strong>DP minimal 30%</strong></span>
+                            <span>Free 3D Design</span>
+                            <span>Free 2 pohon besar</span>
+                            <span>Pelunasan H-3 sebelum pemasangan</span>
+                        </div>
+                        <button class="btn btn-outline btn-order-now" data-package="Indoor - Rose Package">Pesan Sekarang</button>
+                    </div>
+                    <div class="package-details">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Dekorasi pelaminan 10 M</li>
+                            <li><i class="fas fa-check"></i> Backdrop musik</li>
+                            <li><i class="fas fa-check"></i> Photobooth</li>
+                            <li><i class="fas fa-check"></i> Photo Galeri</li>
+                            <li><i class="fas fa-check"></i> Standing Bunga</li>
+                            <li><i class="fas fa-check"></i> Dekorasi Lorong Jalan</li>
+                            <li><i class="fas fa-check"></i> Karpet Jalan</li>
+                            <li><i class="fas fa-check"></i> Wedding Gate/Pintu Masuk</li>
+                            <li><i class="fas fa-check"></i> Kaca dengan inisial Nama</li>
+                            <li><i class="fas fa-check"></i> Dekorasi Pergola Kotak/Bulat</li>
+                            <li><i class="fas fa-check"></i> Kotak Ampou</li>
+                            <li><i class="fas fa-check"></i> Dekorasi Lampu Jalan</li>
+                            <li><i class="fas fa-check"></i> Dekorasi Lampu Pelaminan</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Indoor: Lily -->
+                <div class="package-card">
+                    <div class="pkg-slider">
+                        <button class="pkg-slide-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+                        <div class="pkg-slider-track">
+                            <div class="pkg-slide"><img src="assets/images/gallery-4.jpeg" alt="Lily Indoor - Dekorasi pelaminan 10M dengan 4 pohon besar"></div>
+                            <div class="pkg-slide"><img src="assets/images/gallery-6.jpeg" alt="Lily Indoor - Dekorasi lengkap dengan pergola dan lampu"></div>
+                            <div class="pkg-slide"><img src="assets/images/slide2.jpeg" alt="Lily Indoor - Tema mewah dengan kaca inisial nama"></div>
+                        </div>
+                        <button class="pkg-slide-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <span class="package-label">Decor Indoor</span>
+                    <h3>Lily Package</h3>
+                    <p class="package-price">Start from Rp 63 Jt</p>
+                    <div class="package-main">
+                        <button class="accordion-toggle"><i class="fas fa-chevron-down"></i> Lihat Detail</button>
+                        <div class="package-note">
+                            <span><strong>DP minimal 30%</strong></span>
+                            <span>Free 3D Design</span>
+                            <span>Free 4 pohon besar</span>
+                            <span>Pelunasan H-3 sebelum pemasangan</span>
+                        </div>
+                        <button class="btn btn-primary btn-order-now" data-package="Indoor - Lily Package">Pesan Sekarang</button>
+                    </div>
+                    <div class="package-details">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Dekorasi pelaminan 10 M</li>
+                            <li><i class="fas fa-check"></i> Backdrop musik</li>
+                            <li><i class="fas fa-check"></i> Photobooth</li>
+                            <li><i class="fas fa-check"></i> Photo Galeri</li>
+                            <li><i class="fas fa-check"></i> Standing Bunga</li>
+                            <li><i class="fas fa-check"></i> Dekorasi Lorong Jalan</li>
+                            <li><i class="fas fa-check"></i> Karpet Jalan</li>
+                            <li><i class="fas fa-check"></i> Wedding Gate/Pintu Masuk</li>
+                            <li><i class="fas fa-check"></i> Kaca dengan inisial Nama</li>
+                            <li><i class="fas fa-check"></i> Dekorasi Pergola Kotak/Bulat</li>
+                            <li><i class="fas fa-check"></i> Kotak Ampou</li>
+                            <li><i class="fas fa-check"></i> Dekorasi Lampu Jalan</li>
+                            <li><i class="fas fa-check"></i> Dekorasi Lampu Pelaminan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="packages-outdoor" class="packages">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Paket Outdoor</span>
+                <h2>Paket Dekorasi Outdoor</h2>
+                <p>Pilihan paket dekorasi outdoor yang cantik dan natural untuk pernikahan di alam terbuka.</p>
+            </div>
+            <div class="packages-grid">
+                <!-- Outdoor: Tulip -->
+                <div class="package-card">
+                    <div class="pkg-slider">
+                        <button class="pkg-slide-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+                        <div class="pkg-slider-track">
+                            <div class="pkg-slide"><img src="assets/images/slide1.jpeg" alt="Tulip Outdoor - Dekorasi outdoor taman dengan pelaminan 7M"></div>
+                            <div class="pkg-slide"><img src="assets/images/gallery-4.jpeg" alt="Tulip Outdoor - Taman pernikahan dengan arch bunga"></div>
+                            <div class="pkg-slide"><img src="assets/images/gallery-6.jpeg" alt="Tulip Outdoor - Setup outdoor dengan kursi tamu"></div>
+                        </div>
+                        <button class="pkg-slide-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <span class="package-label">Decor Only</span>
+                    <h3>Tulip Package</h3>
+                    <p class="package-price">Start from Rp 16,4 Jt</p>
+                    <div class="package-main">
+                        <button class="accordion-toggle"><i class="fas fa-chevron-down"></i> Lihat Detail</button>
+                        <div class="package-note">
+                            <span><strong>DP minimal 30%</strong></span>
+                            <span>Pelunasan H-3 sebelum pemasangan</span>
+                        </div>
+                        <button class="btn btn-primary btn-order-now" data-package="Outdoor - Tulip Package">Pesan Sekarang</button>
+                    </div>
+                    <div class="package-details">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Dekorasi pelaminan 7 M</li>
+                            <li><i class="fas fa-check"></i> Backdrop musik</li>
+                            <li><i class="fas fa-check"></i> Backdrop Photobooth</li>
+                            <li><i class="fas fa-check"></i> Photo Galeri</li>
+                            <li><i class="fas fa-check"></i> Standing Bunga</li>
+                            <li><i class="fas fa-check"></i> Dekorasi Lorong</li>
+                            <li><i class="fas fa-check"></i> Wedding Gate/Pintu Masuk</li>
+                            <li><i class="fas fa-check"></i> Kotak Ampou</li>
+                            <li><i class="fas fa-check"></i> Dekorasi Lampu Pelaminan</li>
+                            <li><i class="fas fa-check"></i> 8 Kursi Bakso</li>
+                            <li><i class="fas fa-check"></i> Detailing</li>
+                            <li><i class="fas fa-check"></i> Mix Flower</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Outdoor: Kuntum -->
+                <div class="package-card">
+                    <div class="pkg-slider">
+                        <button class="pkg-slide-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+                        <div class="pkg-slider-track">
+                            <div class="pkg-slide"><img src="assets/images/gallery-5.jpeg" alt="Kuntum Outdoor - Dekorasi outdoor 6M dengan standing bunga"></div>
+                            <div class="pkg-slide"><img src="assets/images/slide3.jpeg" alt="Kuntum Outdoor - Wedding gate outdoor dengan rangkaian bunga"></div>
+                            <div class="pkg-slide"><img src="assets/images/gallery-2.jpeg" alt="Kuntum Outdoor - Setup photobooth outdoor"></div>
+                        </div>
+                        <button class="pkg-slide-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <span class="package-label">Decor Only</span>
+                    <h3>Kuntum Package</h3>
+                    <p class="package-price">Start from Rp 13,5 Jt</p>
+                    <div class="package-main">
+                        <button class="accordion-toggle"><i class="fas fa-chevron-down"></i> Lihat Detail</button>
+                        <div class="package-note">
+                            <span><strong>DP minimal 30%</strong></span>
+                            <span>Pelunasan H-3 sebelum pemasangan</span>
+                        </div>
+                        <button class="btn btn-outline btn-order-now" data-package="Outdoor - Kuntum Package">Pesan Sekarang</button>
+                    </div>
+                    <div class="package-details">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Dekorasi pelaminan 6 M</li>
+                            <li><i class="fas fa-check"></i> Backdrop musik</li>
+                            <li><i class="fas fa-check"></i> Photobooth</li>
+                            <li><i class="fas fa-check"></i> Standing Bunga</li>
+                            <li><i class="fas fa-check"></i> Dekorasi Lorong Jalan</li>
+                            <li><i class="fas fa-check"></i> Wedding Gate/Pintu Masuk</li>
+                            <li><i class="fas fa-check"></i> Kotak Ampou</li>
+                            <li><i class="fas fa-check"></i> Dekorasi Lampu Pelaminan</li>
+                            <li><i class="fas fa-check"></i> Detailing</li>
+                            <li><i class="fas fa-check"></i> Mix Flower</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Outdoor: Rose -->
+                <div class="package-card">
+                    <div class="pkg-slider">
+                        <button class="pkg-slide-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+                        <div class="pkg-slider-track">
+                            <div class="pkg-slide"><img src="assets/images/gallery-2.jpeg" alt="Rose Outdoor - Custom decor outdoor 6-7M dengan pergola"></div>
+                            <div class="pkg-slide"><img src="assets/images/slide4.jpeg" alt="Rose Outdoor - Dekorasi taman dengan 10 kursi bakso"></div>
+                            <div class="pkg-slide"><img src="assets/images/gallery-1.jpeg" alt="Rose Outdoor - Outdoor elegant dengan detail bunga premium"></div>
+                        </div>
+                        <button class="pkg-slide-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <span class="package-label">Decor Only</span>
+                    <h3>Rose Package</h3>
+                    <p class="package-price">Start from Rp 32 Jt</p>
+                    <div class="package-main">
+                        <button class="accordion-toggle"><i class="fas fa-chevron-down"></i> Lihat Detail</button>
+                        <div class="package-note">
+                            <span><strong>DP minimal 30%</strong></span>
+                            <span>Free 3D Design</span>
+                            <span>Pelunasan H-3 sebelum pemasangan</span>
+                        </div>
+                        <button class="btn btn-outline btn-order-now" data-package="Outdoor - Rose Package">Pesan Sekarang</button>
+                    </div>
+                    <div class="package-details">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Dekorasi pelaminan 6-7M Request (Custom Decoration)</li>
+                            <li><i class="fas fa-check"></i> Backdrop musik</li>
+                            <li><i class="fas fa-check"></i> Backdrop Photobooth</li>
+                            <li><i class="fas fa-check"></i> Photo Galeri</li>
+                            <li><i class="fas fa-check"></i> Standing Bunga</li>
+                            <li><i class="fas fa-check"></i> Dekorasi Lorong Jalan</li>
+                            <li><i class="fas fa-check"></i> Wedding Gate/Pintu Masuk</li>
+                            <li><i class="fas fa-check"></i> Dekorasi Pergola</li>
+                            <li><i class="fas fa-check"></i> Kotak Ampou</li>
+                            <li><i class="fas fa-check"></i> Dekorasi Lampu Pelaminan</li>
+                            <li><i class="fas fa-check"></i> 10 Kursi Bakso</li>
+                            <li><i class="fas fa-check"></i> Detailing</li>
+                            <li><i class="fas fa-check"></i> Mix Flower</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Outdoor: Lily -->
+                <div class="package-card">
+                    <div class="pkg-slider">
+                        <button class="pkg-slide-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+                        <div class="pkg-slider-track">
+                            <div class="pkg-slide"><img src="assets/images/slide2.jpeg" alt="Lily Outdoor - Paket outdoor terlengkap dengan dekorasi premium"></div>
+                            <div class="pkg-slide"><img src="assets/images/gallery-3.jpeg" alt="Lily Outdoor - Dekorasi taman mewah dengan detail eksklusif"></div>
+                            <div class="pkg-slide"><img src="assets/images/gallery-6.jpeg" alt="Lily Outdoor - Setup outdoor lengkap dengan lounge"></div>
+                        </div>
+                        <button class="pkg-slide-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <span class="package-label">Decor Only</span>
+                    <h3>Lily Package</h3>
+                    <p class="package-price">Start from Rp 63 Jt</p>
+                    <div class="package-main">
+                        <button class="accordion-toggle"><i class="fas fa-chevron-down"></i> Lihat Detail</button>
+                        <div class="package-note">
+                            <span><strong>DP minimal 30%</strong></span>
+                            <span>Free 3D Design</span>
+                            <span>Free 4 pohon besar</span>
+                            <span>Pelunasan H-3 sebelum pemasangan</span>
+                        </div>
+                        <button class="btn btn-primary btn-order-now" data-package="Outdoor - Lily Package">Pesan Sekarang</button>
+                    </div>
+                    <div class="package-details">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Dekorasi pelaminan 10 M</li>
+                            <li><i class="fas fa-check"></i> Backdrop musik</li>
+                            <li><i class="fas fa-check"></i> Photobooth</li>
+                            <li><i class="fas fa-check"></i> Photo Galeri</li>
+                            <li><i class="fas fa-check"></i> Standing Bunga</li>
+                            <li><i class="fas fa-check"></i> Dekorasi Lorong Jalan</li>
+                            <li><i class="fas fa-check"></i> Karpet Jalan</li>
+                            <li><i class="fas fa-check"></i> Wedding Gate/Pintu Masuk</li>
+                            <li><i class="fas fa-check"></i> Kaca dengan inisial Nama</li>
+                            <li><i class="fas fa-check"></i> Dekorasi Pergola Kotak/Bulat</li>
+                            <li><i class="fas fa-check"></i> Kotak Ampou</li>
+                            <li><i class="fas fa-check"></i> Dekorasi Lampu Jalan</li>
+                            <li><i class="fas fa-check"></i> Dekorasi Lampu Pelaminan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="custom-decor" class="cta">
+        <div class="container cta-inner">
+            <div>
+                <span class="section-tag">Custom Décor</span>
+                <h2>Kustomisasi Dekorasi Impianmu</h2>
+                <p>Pilih item dekorasi sesuai keinginanmu, dan kami akan memberikan penawaran terbaik untukmu.</p>
+            </div>
+            <div class="decor-checklist-wrapper">
+                <div class="decor-checklist">
+                    <label class="decor-check-item">
+                        <input type="checkbox" value="Pelaminan Custom"> 
+                        <span class="checkmark"></span>
+                        Pelaminan Custom
+                    </label>
+                    <label class="decor-check-item">
+                        <input type="checkbox" value="Backdrop Musik & Photobooth"> 
+                        <span class="checkmark"></span>
+                        Backdrop Musik & Photobooth
+                    </label>
+                    <label class="decor-check-item">
+                        <input type="checkbox" value="Dekorasi Lorong & Karpet Jalan"> 
+                        <span class="checkmark"></span>
+                        Dekorasi Lorong & Karpet Jalan
+                    </label>
+                    <label class="decor-check-item">
+                        <input type="checkbox" value="Wedding Gate / Pintu Masuk"> 
+                        <span class="checkmark"></span>
+                        Wedding Gate / Pintu Masuk
+                    </label>
+                    <label class="decor-check-item">
+                        <input type="checkbox" value="Standing Bunga & Mix Flower"> 
+                        <span class="checkmark"></span>
+                        Standing Bunga & Mix Flower
+                    </label>
+                    <label class="decor-check-item">
+                        <input type="checkbox" value="Dekorasi Pergola & Lampu Jalan"> 
+                        <span class="checkmark"></span>
+                        Dekorasi Pergola & Lampu Jalan
+                    </label>
+                    <label class="decor-check-item">
+                        <input type="checkbox" value="Kaca Inisial Nama & Photo Galeri"> 
+                        <span class="checkmark"></span>
+                        Kaca Inisial Nama & Photo Galeri
+                    </label>
+                    <label class="decor-check-item">
+                        <input type="checkbox" value="Kursi Bakso & Detailing Lainnya"> 
+                        <span class="checkmark"></span>
+                        Kursi Bakso & Detailing Lainnya
+                    </label>
+                </div>
+                <button class="btn btn-secondary btn-lg" id="customDecorWA"><i class="fas fa-comments"></i> Konsultasi via WhatsApp</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="terms">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Terms & Conditions</span>
+                <h2>Syarat & Ketentuan Pemesanan</h2>
+            </div>
+            <div class="terms-content">
+                <p>Dengan melakukan pemesanan, pelanggan menyetujui ketentuan berikut:</p>
+                <ul>
+                    <li>pricelist sudah termasuk biaya trasportasi Cicurug & Sekitarnya (Max Ciawi Bogor)</li>
+                    <li>Request pelaminan minimal h-2 bln sebelum pemasangan, harga menyesuaikan dengan ketentuan yg berlaku</li>
+                    <li>Available untuk All in Package</li>
+                    <li>Reschedule boleh dilakukan sebelum h-3 bulan ke jadwal yg tersedia (maksimal 1x) untuk pelunasanya tetap di H-7 sebelum pemasangan</li>
+                    <li>Pembatalan dari pihak client menghanguskan semua payment yang sudah masuk (dp 30%)</li>
+                    <li>jika memerlukan tenda tambahan akan dikenakan biaya 45 rb permeter</li>
+                    <li>Harga sewaktu waktu dapat berubah</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#home" class="logo footer-logo"><div class="logo-icon"><i class="fas fa-feather-alt"></i></div><span>Aure'Design</span></a>
+                <p>Wedding decor studio yang memadukan harmoni dan personalisasi untuk momen pernikahan Anda.</p>
+            </div>
+<div class="footer-links"><h4>Layanan</h4><ul><li><a href="#services">Organic Minimalist</a></li><li><a href="#services">Traditional Java</a></li><li><a href="#packages-indoor">Blossom & Drapes</a></li></ul></div>
+            <div class="footer-links"><h4>Kontak</h4><ul class="contact-list"><li><i class="fas fa-phone"></i> +62 812 345 678</li><li><i class="fas fa-envelope"></i> hello@auredesign.id</li><li><i class="fas fa-map-marker-alt"></i> Jakarta & Jabodetabek</li></ul></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 Aure'Design Wedding Decor. Semua hak cipta dilindungi.</p></div>
+    </footer>
+
+    <button class="scroll-to-top" id="scrollToTopBtn"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Modal Overlay (shared) -->
+    <div id="modalOverlay"></div>
+
+    <!-- Modal: Free Consultation (Hero) -->
+    <div id="freeConsultModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Konsultasi Gratis</h3>
+                <button class="modal-close free-consult-close">&times;</button>
+            </div>
+            <p style="color:var(--muted);margin-bottom:16px;">Isi data Anda, kami akan hubungi via WhatsApp.</p>
+            <form id="freeConsultForm">
+                <div class="form-group">
+                    <label for="freeName">Nama <span class="required">*</span></label>
+                    <input type="text" id="freeName" required placeholder="Nama lengkap Anda">
+                </div>
+                <div class="form-group">
+                    <label for="freeDomisili">Estimasi Domisili Acara <span class="required">*</span></label>
+                    <input type="text" id="freeDomisili" required placeholder="Contoh: Bogor, Jakarta">
+                </div>
+                <div class="form-group">
+                    <label for="freeTanggal">Rencana Tanggal Acara</label>
+                    <input type="date" id="freeTanggal">
+                </div>
+                <div class="form-group">
+                    <label for="freeBudget">Kisaran Budget</label>
+                    <input type="text" id="freeBudget" placeholder="Contoh: Rp 30 Jt - Rp 50 Jt">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block"><i class="fab fa-whatsapp"></i> Kirim via WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal: Order Package -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Pesan Sekarang</h3>
+                <button id="modalClose" class="modal-close">&times;</button>
+            </div>
+            <p class="modal-package">Paket: <strong id="selectedPackageName">-</strong></p>
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="fieldName">Nama Lengkap <span class="required">*</span></label>
+                    <input type="text" id="fieldName" required placeholder="Masukkan nama lengkap Anda">
+                </div>
+                <div class="form-group">
+                    <label for="fieldDomisili">Estimasi Domisili Acara <span class="required">*</span></label>
+                    <input type="text" id="fieldDomisili" required placeholder="Contoh: Bogor, Jakarta">
+                </div>
+                <div class="form-group">
+                    <label for="fieldTanggal">Rencana Tanggal Acara</label>
+                    <input type="date" id="fieldTanggal">
+                </div>
+                <div class="form-group">
+                    <label for="fieldBudget">Kisaran Budget</label>
+                    <input type="text" id="fieldBudget" placeholder="Contoh: Rp 30 Jt - Rp 50 Jt">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block"><i class="fab fa-whatsapp"></i> Kirim via WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal: Custom Decor Order -->
+    <div id="customDecorModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Konsultasi Custom Décor</h3>
+                <button class="modal-close custom-decor-close">&times;</button>
+            </div>
+            <p style="color:var(--muted);margin-bottom:16px;">Isi data Anda untuk konsultasi dekorasi custom.</p>
+            <form id="customDecorForm">
+                <div class="form-group">
+                    <label for="custName">Nama Lengkap <span class="required">*</span></label>
+                    <input type="text" id="custName" required placeholder="Nama lengkap Anda">
+                </div>
+                <div class="form-group">
+                    <label for="custDomisili">Estimasi Domisili Acara <span class="required">*</span></label>
+                    <input type="text" id="custDomisili" required placeholder="Contoh: Bogor, Jakarta">
+                </div>
+                <div class="form-group">
+                    <label for="custTanggal">Rencana Tanggal Acara</label>
+                    <input type="date" id="custTanggal">
+                </div>
+                <div class="form-group">
+                    <label for="custBudget">Kisaran Budget</label>
+                    <input type="text" id="custBudget" placeholder="Contoh: Rp 30 Jt - Rp 50 Jt">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block"><i class="fab fa-whatsapp"></i> Kirim via WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal: Add Testimonial Review -->
+    <div id="testimonialModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Berikan Ulasan</h3>
+                <button class="modal-close testimonial-close">&times;</button>
+            </div>
+            <p style="color:var(--muted);margin-bottom:16px;">Bagikan pengalaman Anda dengan Aure'Design.</p>
+            <form id="testimonialForm">
+                <div class="form-group">
+                    <label for="reviewName">Nama Pasangan <span class="required">*</span></label>
+                    <input type="text" id="reviewName" required placeholder="Contoh: Rina & Dimas">
+                </div>
+                <div class="form-group">
+                    <label for="reviewDecor">Jenis Décor <span class="required">*</span></label>
+                    <select id="reviewDecor" required style="width:100%;padding:12px 16px;border-radius:16px;border:1px solid rgba(43,35,31,0.12);font-family:inherit;background:var(--surface-soft);font-size:0.95rem;">
+                        <option value="">Pilih jenis décor</option>
+                        <option value="Pernikahan Indoor">Pernikahan Indoor</option>
+                        <option value="Pernikahan Outdoor">Pernikahan Outdoor</option>
+                        <option value="Pernikahan Intimate">Pernikahan Intimate</option>
+                        <option value="Pernikahan Garden">Pernikahan Garden</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Rating <span class="required">*</span></label>
+                    <div class="star-rating" id="starRating">
+                        <span class="star" data-val="1">&#9733;</span>
+                        <span class="star" data-val="2">&#9733;</span>
+                        <span class="star" data-val="3">&#9733;</span>
+                        <span class="star" data-val="4">&#9733;</span>
+                        <span class="star" data-val="5">&#9733;</span>
+                    </div>
+                    <input type="hidden" id="reviewRating" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="reviewText">Ulasan <span class="required">*</span></label>
+                    <textarea id="reviewText" required rows="3" style="width:100%;padding:12px 16px;border-radius:16px;border:1px solid rgba(43,35,31,0.12);font-family:inherit;background:var(--surface-soft);font-size:0.95rem;resize:vertical;" placeholder="Tulis pengalaman Anda..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block"><i class="fas fa-paper-plane"></i> Kirim Ulasan</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
